@@ -1,17 +1,60 @@
-body, html{
+:root{
+    --background-blue:rgb(75, 191, 245);
+    --text-blue:rgb(17, 21, 77);
+    --text-hover:rgb(100, 105, 180);
+}
+div.cont1, div.cont2{
     width:100%;
-    height:100%;
+    height:50%;
     margin:0;
     padding:0;
-  }
-  .main-text{
-    font-family: 'Emblema One', cursive;
-    font-size:800%;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+    padding: 0;
+    background-color:var(--background-blue);
+}
+p.main-text {
+    font-family: "Emblema One", cursive;
+    font-size:18.5vw;
+    width: 100vw;
+    /* height:25vh; */
+    /* line-height: 0; */
+    text-align: center;
+    /* position:block; */
+    margin:0;
+    /* padding:0; */
+    color: var(--text-blue);
+}
+img.main-icon{
+    /* position:block; */
+    max-width:50vw;
+    max-height:50vh;
     position:absolute;
-    display:block;
+    left:50%;
+    transform:translateX(-50%);
+    /* margin: 3vh 25vw 3vh 25vw; */
+    /* padding:0; */
+    filter:drop-shadow(7px 5px 8px rgba(0, 0, 0, 0.5));
+}
+p.contact-text{
     width:100%;
+    /* height:10vh; */
+    margin:0;
     text-align:center;
-    top:50%;
-    -webkit-transform:translateY(-50%);
-    transform:translateY(-50%);
-  }
+    /* padding:0; */
+    font-size:10vw;
+}
+p.contact-text a{
+    color:inherit;
+}
+p.contact-text a:visited{
+    color:inherit;
+}
+p.contact-text a:hover{
+    filter:contrast(125%) brightness(95%);
+    color:var(--text-hover);
+}
